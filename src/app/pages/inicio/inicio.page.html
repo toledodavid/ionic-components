@@ -9,15 +9,15 @@
       <ion-menu-button color="tertiary" menu="primerMenu"></ion-menu-button>
     </ion-buttons>
 
-    <ion-title>Componentes</ion-title>
+    <ion-title color="tertiary">Componentes</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
   <ion-list>
-    <ion-item [routerLink]="componente.redirectTo" detail *ngFor="let componente of componentes">
-      <ion-icon slot="start" [name]="componente.icon"></ion-icon>
+    <ion-item [routerLink]="componente.redirectTo" detail *ngFor="let componente of componentes | async">
+      <ion-icon slot="start" [name]="componente.icon" color="tertiary"></ion-icon>
       <ion-label>
         {{componente.name}}
       </ion-label>
