@@ -31,4 +31,21 @@
     </ion-item>
   </ion-list>
 
+  <ion-list *ngIf="(superHeroes | async) === null">
+    <ion-item lines="full" *ngFor="let item of [1,1,1,1,1,1,1,1,1,1,1,1,1]">
+      <ion-label slot="start">
+        <h3>
+          <ion-skeleton-text width="70%" animated></ion-skeleton-text>
+        </h3>
+        <p>
+          <ion-skeleton-text width="100%" animated></ion-skeleton-text>
+        </p>
+      </ion-label>
+
+      <ion-label slot="end">
+        <ion-skeleton-text width="60px" class="ion-float-right" animated></ion-skeleton-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
 </ion-content>
