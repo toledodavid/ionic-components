@@ -25,6 +25,7 @@ const routes: Routes = [
   { path: 'searchbar', loadChildren: './pages/searchbar/searchbar.module#SearchbarPageModule' },
   { path: 'segment', loadChildren: './pages/segment/segment.module#SegmentPageModule' },
   { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
+  { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
   //{ path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
 ];
 
